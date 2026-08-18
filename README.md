@@ -140,7 +140,7 @@ Esta parte no se ejecuta localmente: requiere una cuenta de AWS con permisos de 
 
 ## Entrenamiento y despliegue en Amazon SageMaker
 
-El entrenamiento y despliegue en producción de la CNN se ejecutó en Amazon SageMaker (`sagemaker/train.py` y `sagemaker/despliegue_sagemaker.ipynb`).
+El entrenamiento y despliegue en producción de la CNN se ejecutó en Amazon SageMaker (`sagemaker/train.py` y `sagemaker/despliegue_sagemaker.ipynb`). El despliegue no se pudo realizar por politicas de AWS ACADEMY
 
 ![Endpoint de SageMaker](imagenes/Sagemaker.jpeg)
 
