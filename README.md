@@ -135,10 +135,17 @@ Esta parte no se ejecuta localmente: requiere una cuenta de AWS con permisos de 
    ImageFolder (data/train/<clase>/*.jpg, data/val/<clase>/*.jpg).
 2. Desde una instancia de notebook de SageMaker o SageMaker Studio, abrir
    sagemaker/despliegue_sagemaker.ipynb y ejecutar las celdas en orden: subida a S3,
-   creación del PyTorch Estimator apuntando a sagemaker/train.py, fit, deploy,
-   invocación de prueba del endpoint.
-3. **Importante**: eliminar el endpoint al terminar (predictor.delete_endpoint()) para
-   evitar cargos innecesarios en la cuenta de AWS.
+   creación del PyTorch Estimator apuntando a sagemaker/train.py.
+
+
+## Entrenamiento y despliegue en Amazon SageMaker
+
+El entrenamiento y despliegue en producción de la CNN se ejecutó en Amazon SageMaker (`sagemaker/train.py` y `sagemaker/despliegue_sagemaker.ipynb`).
+
+![Endpoint de SageMaker](imagenes/Sagemaker.jpeg)
+
+![Logs de entrenamiento en SageMaker](imagenes/Sagemaker_Log.jpeg)
+
 
 ## Bonus
 
